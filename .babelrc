@@ -1,13 +1,14 @@
 {
-  "presets": [
-    "@babel/stage-1",
-    [
-      "@babel/env",
-      {
-        "targets": {
-          "node": "9"
-        }
-      }
+    "presets": [
+        "@babel/stage-1",
+        [
+            "@babel/env",
+            {
+                "modules": false,
+                "targets": {
+                    "node": "8"
+                }
+            }
+        ]
     ]
-  ]
 }

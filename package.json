@@ -1,0 +1,27 @@
+{
+  "name": "react-docs",
+  "version": "0.0.1",
+  "description": "A utility to generate a list documentation for every component exported by a package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest"
+  },
+  "keywords": [
+    "react",
+    "docs",
+    "flow",
+    "flowtype"
+  ],
+  "author": "AlecAivazis",
+  "license": "MIT",
+  "jest": {
+      "testRegex": "test.js$"
+  },
+  "dependencies": {
+    "babylon": "^7.0.0-beta.44"
+  },
+  "devDependencies": {
+    "jest-cli": "^22.4.3",
+    "prettier": "^1.12.1"
+  }
+}

@@ -12,7 +12,7 @@
     "flow",
     "flowtype"
   ],
-  "author": "AlecAivazis",
+  "author": "Alec Aivazis <alec@aivazis.com>",
   "license": "MIT",
   "jest": {
       "testRegex": "test.js$"

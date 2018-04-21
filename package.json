@@ -15,13 +15,13 @@
   "author": "Alec Aivazis <alec@aivazis.com>",
   "license": "MIT",
   "jest": {
-      "testRegex": "test.js$"
+    "testRegex": "test.js$"
   },
   "prettier": {
-      "tabWidth": 4,
-      "semi": false,
-      "singleQuote": true,
-      "printWidth": 100
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100
   },
   "dependencies": {
     "babylon": "^7.0.0-beta.44"

@@ -201,10 +201,7 @@ const collectExports = (filepath, opts = {}) => {
         // look for any `export * from ...`
         const exportAllComponents = (await Promise.all(
             content
-                .filter(
-                    ({ type, exportKind, source }) =>
-                        type === 'ExportAllDeclaration' && exportKind === 'value' && source
-                )
+                .filter(({ type }) => type === 'ExportAllDeclaration')
                 .map(async exportStatement => {
                     // parse the file we are importing from
                     const { components } = await collectExports(exportStatement.importPath, opts)
@@ -225,10 +222,7 @@ const collectExports = (filepath, opts = {}) => {
         // types capured by an export * statement
         const exportAllTypes = (await Promise.all(
             content
-                .filter(
-                    ({ type, exportKind, source }) =>
-                        type === 'ExportAllDeclaration' && exportKind === 'value' && source
-                )
+                .filter(({ type }) => type === 'ExportAllDeclaration')
                 .map(async exportStatement => {
                     // parse the file we are importing from
                     const { types } = await collectExports(exportStatement.importPath, opts)

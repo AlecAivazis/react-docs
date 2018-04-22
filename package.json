@@ -1,8 +1,9 @@
 {
-  "name": "react-docs",
+  "name": "@aaivazis/react-docs",
+  "private": true,
   "version": "0.0.1",
   "description": "A utility to generate a list documentation for every component exported by a package.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "rm -rf build  && babel src --out-dir build --ignore **/test.js",
     "test": "NODE_ENV=test jest"

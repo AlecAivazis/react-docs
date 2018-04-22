@@ -35,3 +35,15 @@ note: The prop table for the exported types is also returned under the `types` f
 
 
 ### Aliasing global packages
+
+By default (for now), `react-docs` will ignore types imported from global packages. In order to provide 
+a location to retrieve definitions from a global package, you can pass a second argument to `collectExports`
+that provides location aliases, for example:
+
+```
+await collectExports('/absolute/path/to/my/package/index.js'> {
+    alias: {
+        "quark-core": path.resolve(__dirname, "node_modules", "quark_core", "src", "index.js")
+    }
+})
+```

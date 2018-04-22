@@ -18,7 +18,7 @@ console.log(components)
 ```
 
 The description of each component is returned as an object of the form:
-```
+```javascript
 {
     filepath: String // the absolute path to the component declaration
     props: {
@@ -40,7 +40,7 @@ By default (for now), `react-docs` will ignore types imported from global packag
 a location to retrieve definitions from a global package, you can pass a second argument to `collectExports`
 that provides location aliases, for example:
 
-```
+```javascript
 await collectExports('/absolute/path/to/my/package/index.js'> {
     alias: {
         "quark-core": path.resolve(__dirname, "node_modules", "quark_core", "src", "index.js")

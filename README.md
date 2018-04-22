@@ -24,8 +24,8 @@ The description of each component is returned as an object of the form:
     props: {
         prop1: {
             value: String      // a pretty printed string of the flow definition
-            required: Boolean  // wether the prop is required or not
-            nullable: Boolean  // wether `null` is a valid value
+            required: Boolean  // whether the prop is required or not
+            nullable: Boolean  // whether `null` is a valid value
         }
     }
 }

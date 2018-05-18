@@ -1,5 +1,5 @@
 {
-  "name": "@aaivazis/react-docs",
+  "name": "react-docs",
   "version": "0.0.2",
   "description": "A utility to generate a list documentation for every component exported by a package.",
   "main": "build/index.js",

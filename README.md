@@ -41,7 +41,7 @@ a location to retrieve definitions from a global package, you can pass a second 
 that provides location aliases, for example:
 
 ```javascript
-await collectExports('/absolute/path/to/my/package/index.js'> {
+await collectExports('/absolute/path/to/my/package/index.js', {
     alias: {
         "quark-core": path.resolve(__dirname, "node_modules", "quark-core", "src", "index.js")
     }

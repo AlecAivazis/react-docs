@@ -1,5 +1,10 @@
 # react-docs
+
 A utility to generate documentation for every component exported by a single file
+
+
+[![Build Status](https://travis-ci.com/AlecAivazis/react-docs.svg?branch=master)](https://travis-ci.com/AlecAivazis/react-docs)
+
 
 ## Usage
 

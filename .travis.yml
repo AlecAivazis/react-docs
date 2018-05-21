@@ -10,4 +10,4 @@ node_js:
 # command to run tests
 script:
   - npm i
-  - npm run test
+  - npm run test:coverage
